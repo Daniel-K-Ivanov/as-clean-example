@@ -20,3 +20,8 @@ export class TestArray extends Array<u8>{
     return super.reduceRight<u8>(callbackfn, initialValue);
   }
 }
+
+export function test(): i32 {
+  const t = new TestArray();
+  return 1;
+}
